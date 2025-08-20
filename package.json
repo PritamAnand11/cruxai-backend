@@ -1,0 +1,39 @@
+{
+  "name": "cruxai-backend",
+  "version": "1.0.0",
+  "description": "CruxAI Backend using Node.js (API Orchestration + MongoDB)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "lint": "eslint .",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PritamAnand11/cruxai-backend.git"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "backend",
+    "api",
+    "mongodb",
+    "cruxai"
+  ],
+  "author": "Pritam Anand",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PritamAnand11/cruxai-backend/issues"
+  },
+  "homepage": "https://github.com/PritamAnand11/cruxai-backend#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "eslint": "^9.33.0",
+    "nodemon": "^3.1.10"
+  }
+}
