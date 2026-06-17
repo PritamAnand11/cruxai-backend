@@ -12,10 +12,6 @@ app.listen(PORT, () => {
   console.log(`✅ Server running on http://localhost:5000`);
 });
 
-
-
-
-// Middleware
 app.use(cors());
 app.use(express.json());
 
@@ -24,9 +20,6 @@ app.get("/", (req, res) => {
   res.send("🚀 CruxAI Backend is running...");
 });
 
-/* -------------------- API Routes -------------------- */
-
-// Generic /api/ask route
 app.post("/api/ask", async (req, res) => {
   try {
     const { question, provider } = req.body;
@@ -39,17 +32,14 @@ app.post("/api/ask", async (req, res) => {
 
     switch (provider) {
       case "gemini":
-        // TODO: integrate Gemini API using process.env.GEMINI_API_KEY
         reply = "Gemini response placeholder";
         break;
 
       case "grok":
-        // TODO: integrate Grok API using process.env.GROK_API_KEY
         reply = "Grok response placeholder";
         break;
 
       case "deepseek":
-        // TODO: integrate DeepSeek API using process.env.DEEPSEEK_API_KEY
         reply = "DeepSeek response placeholder";
         break;
 
@@ -63,7 +53,6 @@ app.post("/api/ask", async (req, res) => {
   }
 });
 
-/* -------------------- Start Server -------------------- */
 app.listen(PORT, () => {
   console.log(`✅ Server running at http://localhost:5000`);
 });
